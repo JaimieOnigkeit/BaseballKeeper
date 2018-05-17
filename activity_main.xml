@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.user.baseballkeeper.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/innings"
+            style="@style/Header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/innings" />
+
+        <TextView
+            android:id="@+id/inningsText"
+            style="@style/Header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/inningsText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/strikes"
+            style="@style/Header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strikes" />
+
+        <TextView
+            android:id="@+id/strikeText"
+            style="@style/Header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/strikesText" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_A"
+                style="@style/Header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_A" />
+
+            <TextView
+                android:id="@+id/score_A"
+                style="@style/Main1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/score_A" />
+
+            <TextView
+                android:id="@+id/scoreText_A"
+                style="@style/Main1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreText_A" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_B"
+                style="@style/Header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_B" />
+
+            <TextView
+                android:id="@+id/score_B"
+                style="@style/Main1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/score_B" />
+
+            <TextView
+                android:id="@+id/scoreText_B"
+                style="@style/Main1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scoreText_B" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/runButton"
+        style="@style/ButtonCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="run" <!--This line returns an error "Corresponding method handler not found"-->
+        android:text="@string/runsButtonB" />
+
+    <Button
+        android:id="@+id/strikeButton"
+        style="@style/ButtonCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="strike"<!--This line returns an error "Corresponding method handler not found"-->
+        android:text="@string/strikeButton" />
+
+    <Button
+        android:id="@+id/resetButton"
+        style="@style/ButtonCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="reset" <!--This line returns an error "Corresponding method handler not found"-->
+        android:text="@string/resetButton" />
+
+</LinearLayout>
